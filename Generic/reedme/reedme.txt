@@ -1,0 +1,12 @@
+ 泛型是JDK1.5的新特性
+ 	泛型的好处：
+ 		1.将运行时的异常提前至了编译时。
+ 		2.避免了无谓的强制类型转换
+ 	泛型的格式：
+ 		ArrayList<String> list = new ArrayList<String>();    	true
+ 		ArrayList<Object> list = new ArrayList<String>();		false	
+ 		ArrayList<String> list = new ArrayList<Object>();		false
+ 		ArrayList<String> list = new ArrayList();				true
+ 		ArrayList         list = new ArrayList<String>();		true
+ 	注意： 反省没有多态的概念，左右两边的类型必须要保持一致，或者是只写一边的泛型。
+ 	推荐使用：两边都写反省。
