@@ -1,12 +1,12 @@
 /**  
 * @Title: GenericDemo.java  
-* @Package com.wzd.demo  
+* @Package com.wzd.generic.demo  
 * @Description: Java泛型演示 
 * @author wangzedong  
 * @date 2018年11月14日上午7:38:40  
 * @version V1.0  
 */    
-package com.wzd.demo;
+package com.wzd.generic.demo;
 
 import java.util.ArrayList;
 
