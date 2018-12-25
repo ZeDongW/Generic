@@ -34,8 +34,8 @@ public class MyArrayUtilTest {
     @Test
     public void testMyReverse() {
         MyArraysUtil util = new MyArraysUtil();
-//        String[] arr = {"sd","sf","dfg","fertr"};
-        Integer[] arr = {34,65,245,676,321,43,3};
+        String[] arr = {"sd","sf","dfg","fertr"};
+//        Integer[] arr = {34,65,245,676,321,43,3};
         System.out.println("反转前数组为 :" + util.toString(arr));
         util.myReverse(arr);
         System.out.println("反转后数组为 :" + util.toString(arr));

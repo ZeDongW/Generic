@@ -15,7 +15,7 @@ package com.wzd.generic.demo;
 * @date 2018年11月15日上午7:07:08  
 *    
 */
-public class MyArraysUtil {
+public class MyArraysUtil<T>{
     
     /**
      * 
@@ -25,7 +25,7 @@ public class MyArraysUtil {
     * @return void    返回类型  
     * @throws
      */
-    public <T>void myReverse(T[] arr) {
+    public void myReverse(T[] arr) {
         for(int startIndex = 0, endIndex = (arr.length - 1); startIndex < endIndex; startIndex++, endIndex--) {
             T temp = arr[startIndex];
             arr[startIndex] = arr[endIndex];
@@ -42,7 +42,7 @@ public class MyArraysUtil {
     * @return String    返回类型  
     * @throws
      */
-    public <T>String toString(T[] arr) {
+    public String toString(T[] arr) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < arr.length; i++) {
             if(i == 0) {
@@ -54,6 +54,18 @@ public class MyArraysUtil {
             }
         }
         return sb.toString();
+    }
+    
+    /**
+     * 
+    * @Title: print  
+    * @Description: 在自定义泛型类上声名静态方法，需要在方法上自己声明使用
+    * @param @param arr    参数  
+    * @return void    返回类型  
+    * @throws
+     */
+    public static <T>void print(T[] arr) {
+        
     }
 
 }
