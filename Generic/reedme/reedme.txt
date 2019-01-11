@@ -46,4 +46,9 @@
  	格式：
  		public class Demo<T> implements Dao<T>{
  		
- 		}	
+ 		}
+ 		
+ 	泛型的上下限：
+ 		泛型中的通配符： ？
+ 		？ super Integer  ： 只能表示Integer或Integer父类的元素， 表示泛型的下限
+ 		？ extends Number ： 只能表示Number或Number子类的元素，表示泛型的上限	
